@@ -31,7 +31,6 @@ npm install
 ```bash
 npm run dev
 ```
-
 3. Open [http://localhost:5173](http://localhost:5173)
 
 ## Why Recoil?
