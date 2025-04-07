@@ -38,3 +38,6 @@ npm run dev
 - More scalable than Context API for complex state
 - Finer-grained updates than Redux
 - Simple API similar to React's built-in hooks
+
+
+
