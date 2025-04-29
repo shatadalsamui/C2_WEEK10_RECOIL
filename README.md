@@ -1,12 +1,43 @@
-# React + Vite
+# Recoil State Management Demo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project demonstrates Facebook's Recoil library for state management in React applications.
 
-Currently, two official plugins are available:
+## Key Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Atom-based State**: Using Recoil's atomic state management
+- **State Isolation**: Components only subscribe to state they need
+- **Performance Optimized**: Minimizes unnecessary re-renders
+- **Counter Example**:
+  - Increase button (+1)
+  - Decrease button (-1)
+  - Current value display
 
-## Expanding the ESLint configuration
+## Core Concepts
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **Atoms**: Units of state that components can subscribe to
+2. **RecoilRoot**: Provider component that makes state available
+3. **useRecoilValue**: Hook to read state values
+4. **useSetRecoilState**: Hook to update state
+
+## How to Run
+
+1. Install dependencies (including Recoil):
+```bash
+npm install recoil
+npm install
+```
+
+2. Start development server:
+```bash
+npm run dev
+```
+
+3. Open [http://localhost:5173](http://localhost:5173)
+
+## Why Recoil?
+
+- More scalable than Context API for complex state
+- Finer-grained updates than Redux
+- Simple API similar to React's built-in hooks
+
+
